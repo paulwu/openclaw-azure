@@ -1,0 +1,2793 @@
+{
+  "responderUsername": "GitHub Copilot",
+  "initialLocation": "panel",
+  "requests": [
+    {
+      "requestId": "request_717a4585-66f7-42a6-a0fc-6e1ecc975b93",
+      "message": {
+        "parts": [
+          {
+            "range": {
+              "start": 0,
+              "endExclusive": 90
+            },
+            "editorRange": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 1,
+              "endColumn": 91
+            },
+            "text": "which prompt or agent can I use to help me explain how the code works in a project folder?",
+            "kind": "text"
+          }
+        ],
+        "text": "which prompt or agent can I use to help me explain how the code works in a project folder?"
+      },
+      "variableData": {
+        "variables": [
+          {
+            "kind": "file",
+            "id": "vscode.implicit.file",
+            "name": "file:README.md",
+            "value": {
+              "$mid": 1,
+              "fsPath": "\\home\\devcontainers\\awesome-copilot\\README.md",
+              "_sep": 1,
+              "external": "vscode-remote://wsl%2Bubuntu/home/devcontainers/awesome-copilot/README.md",
+              "path": "/home/devcontainers/awesome-copilot/README.md",
+              "scheme": "vscode-remote",
+              "authority": "wsl+Ubuntu"
+            },
+            "modelDescription": "User's active file"
+          },
+          {
+            "id": "vscode.prompt.instructions.root__vscode-userdata:/c%3A/Users/pawu/AppData/Roaming/Code/User/prompts/test.instructions.md",
+            "name": "prompt:test.instructions.md",
+            "value": {
+              "$mid": 1,
+              "external": "vscode-userdata:/c%3A/Users/pawu/AppData/Roaming/Code/User/prompts/test.instructions.md",
+              "path": "/C:/Users/pawu/AppData/Roaming/Code/User/prompts/test.instructions.md",
+              "scheme": "vscode-userdata"
+            },
+            "kind": "promptFile",
+            "modelDescription": "Prompt instructions file",
+            "isRoot": true,
+            "originLabel": "Automatically attached as pattern is **",
+            "automaticallyAdded": true
+          },
+          {
+            "id": "vscode.prompt.instructions.root__vscode-remote://wsl%2Bubuntu/home/devcontainers/awesome-copilot/.github/copilot-instructions.md",
+            "name": "prompt:copilot-instructions.md",
+            "value": {
+              "$mid": 1,
+              "external": "vscode-remote://wsl%2Bubuntu/home/devcontainers/awesome-copilot/.github/copilot-instructions.md",
+              "path": "/home/devcontainers/awesome-copilot/.github/copilot-instructions.md",
+              "scheme": "vscode-remote",
+              "authority": "wsl+Ubuntu"
+            },
+            "kind": "promptFile",
+            "modelDescription": "Prompt instructions file",
+            "isRoot": true,
+            "originLabel": "Automatically attached as setting github.copilot.chat.codeGeneration.useInstructionFiles is enabled",
+            "automaticallyAdded": true
+          },
+          {
+            "id": "vscode.prompt.instructions.root__vscode-remote://wsl%2Bubuntu/home/devcontainers/awesome-copilot/AGENTS.md",
+            "name": "prompt:AGENTS.md",
+            "value": {
+              "$mid": 1,
+              "external": "vscode-remote://wsl%2Bubuntu/home/devcontainers/awesome-copilot/AGENTS.md",
+              "path": "/home/devcontainers/awesome-copilot/AGENTS.md",
+              "scheme": "vscode-remote",
+              "authority": "wsl+Ubuntu"
+            },
+            "kind": "promptFile",
+            "modelDescription": "Prompt instructions file",
+            "isRoot": true,
+            "originLabel": "Automatically attached as setting chat.useAgentsMdFile is enabled",
+            "automaticallyAdded": true
+          }
+        ]
+      },
+      "response": [
+        {
+          "kind": "mcpServersStarting",
+          "didStartServerIds": []
+        },
+        {
+          "value": "You need to sign in to your Microsoft account to use GitHub Copilot for Azure (@azure).\n\nAfter you've signed in, I can answer questions about Azure and your Azure resources and subscriptions. I can also assist with template selection, app deployment, diagnosing problems and more.\n\n",
+          "supportThemeIcons": false,
+          "supportHtml": false
+        },
+        {
+          "value": "> $(wand) **New to Microsoft Azure?** \\\n> You may qualify for a $200 credit to use on Azure services when you sign up for a free account.",
+          "supportThemeIcons": true,
+          "supportHtml": false,
+          "supportAlertSyntax": false,
+          "uris": {}
+        },
+        {
+          "kind": "command",
+          "command": {
+            "id": "@azure.signUpForAzure",
+            "title": "Sign up"
+          }
+        },
+        {
+          "value": "Already have a Microsoft account? [Sign in](command:@azure.signInAndRePrompt)",
+          "isTrusted": {
+            "enabledCommands": [
+              "@azure.signInAndRePrompt"
+            ]
+          },
+          "supportThemeIcons": false,
+          "supportHtml": false,
+          "supportAlertSyntax": false,
+          "uris": {
+            "command:@azure.signInAndRePrompt": {
+              "$mid": 1,
+              "external": "command:%40azure.signInAndRePrompt",
+              "path": "@azure.signInAndRePrompt",
+              "scheme": "command"
+            }
+          }
+        }
+      ],
+      "agent": {
+        "extensionId": {
+          "value": "ms-azuretools.vscode-azure-github-copilot",
+          "_lower": "ms-azuretools.vscode-azure-github-copilot"
+        },
+        "extensionVersion": "1.0.153",
+        "publisherDisplayName": "Microsoft",
+        "extensionPublisherId": "ms-azuretools",
+        "extensionDisplayName": "GitHub Copilot for Azure",
+        "id": "ms-azuretools.azure-agent",
+        "description": "GitHub Copilot for Azure",
+        "metadata": {
+          "isSticky": true,
+          "icon": {
+            "$mid": 1,
+            "path": "/home/devcontainers/.vscode-server/extensions/ms-azuretools.vscode-azure-github-copilot-1.0.153-linux-x64/resources/GitHubCopilotforAzure.svg",
+            "scheme": "vscode-remote",
+            "authority": "wsl+Ubuntu"
+          },
+          "hasFollowups": true
+        },
+        "name": "azure",
+        "fullName": "Azure",
+        "locations": [
+          "panel"
+        ],
+        "modes": [
+          "agent",
+          "ask",
+          "edit"
+        ],
+        "slashCommands": [
+          {
+            "name": "learn",
+            "description": "Learn about Azure"
+          },
+          {
+            "name": "resources",
+            "description": "Get information about your Azure resources"
+          },
+          {
+            "name": "diagnose",
+            "description": "Diagnose problems with your Azure applications"
+          },
+          {
+            "name": "cost",
+            "description": "Query incurred costs of your Azure resources"
+          },
+          {
+            "name": "feedback",
+            "description": "Provide feedback or report an issue"
+          },
+          {
+            "name": "help",
+            "description": "Get help with the GitHub Copilot for Azure extension"
+          },
+          {
+            "name": "changeTenant",
+            "description": "Pick what tenant @azure should use"
+          },
+          {
+            "name": "exp",
+            "description": "Learn about Online Experimentation"
+          }
+        ],
+        "disambiguation": [
+          {
+            "category": "azure_learn",
+            "description": "The user has a conceptual question about Azure.",
+            "examples": [
+              "What is the difference between a blob container and a file share?",
+              "Does Azure let me choose where my resources are located?",
+              "What are the pros and cons of function apps vs container apps?",
+              "How does Azure compare to other cloud offerings?"
+            ]
+          },
+          {
+            "category": "azure_resources",
+            "description": "The user wants information about their Azure resources.",
+            "examples": [
+              "What is the application URL of my container app?",
+              "How many of my virtual machines are currently in a running state?",
+              "How many cosmos databases have I created in west us 2?"
+            ]
+          },
+          {
+            "category": "azure_troubleshoot",
+            "description": "The user wants help troubleshooting issues.",
+            "examples": [
+              "How many failed requests did my app receive in the last hour?",
+              "Why is my app service slow?"
+            ]
+          },
+          {
+            "category": "azure_deploy",
+            "description": "The user wants to deploy to Azure.",
+            "examples": [
+              "Help me deploy my azd template to the cloud",
+              "I'd like to create and deploy an AI image generator app",
+              "How can I deploy this project to Azure?"
+            ]
+          },
+          {
+            "category": "azure_cost",
+            "description": "The user asks a question about costs incurred by Azure resources.",
+            "examples": [
+              "Show me my Azure costs of the last month",
+              "How much did I spend in Azure this month so far?",
+              "Show me my Azure costs in the past 3 months and compare them.",
+              "What's the cost of my App Service in January, February and March?"
+            ]
+          },
+          {
+            "category": "azure_template",
+            "description": "The user wants to create a new web app in Azure from a template.",
+            "examples": [
+              "I want to create a new web app in Azure with Python and MongoDB"
+            ]
+          }
+        ]
+      },
+      "timestamp": 1770483560331,
+      "modelId": "copilot/claude-opus-4.5",
+      "responseId": "response_4fb576b2-1d5f-407f-9e8c-292ab77e7ea4",
+      "result": {
+        "timings": {
+          "firstProgress": 242,
+          "totalElapsed": 245
+        },
+        "metadata": {
+          "handlerChain": [
+            "showSignUpOffer"
+          ],
+          "requestId": "cc236d19-b3a8-4c95-8176-458c420a245c",
+          "resultId": "d4351563-369c-4054-a1c5-040bb0d301af",
+          "conversationIndex": 1,
+          "handlerDetermination": {
+            "via": "when"
+          },
+          "chatSessionId": "2336fcca-6f21-40a1-a6ed-65cc0da251e3"
+        }
+      },
+      "responseMarkdownInfo": [],
+      "followups": [],
+      "modelState": {
+        "value": 1,
+        "completedAt": 1770483567005
+      },
+      "contentReferences": [],
+      "codeCitations": [],
+      "timeSpentWaiting": 0
+    },
+    {
+      "requestId": "request_7db374ae-fd0a-48f1-aa9c-64202e5e71f9",
+      "message": {
+        "parts": [
+          {
+            "range": {
+              "start": 0,
+              "endExclusive": 6
+            },
+            "editorRange": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 1,
+              "endColumn": 7
+            },
+            "agent": {
+              "extensionId": {
+                "value": "ms-azuretools.vscode-azure-github-copilot",
+                "_lower": "ms-azuretools.vscode-azure-github-copilot"
+              },
+              "extensionVersion": "1.0.153",
+              "publisherDisplayName": "Microsoft",
+              "extensionPublisherId": "ms-azuretools",
+              "extensionDisplayName": "GitHub Copilot for Azure",
+              "id": "ms-azuretools.azure-agent",
+              "description": "GitHub Copilot for Azure",
+              "metadata": {
+                "isSticky": true,
+                "icon": {
+                  "$mid": 1,
+                  "path": "/home/devcontainers/.vscode-server/extensions/ms-azuretools.vscode-azure-github-copilot-1.0.153-linux-x64/resources/GitHubCopilotforAzure.svg",
+                  "scheme": "vscode-remote",
+                  "authority": "wsl+Ubuntu"
+                },
+                "hasFollowups": true
+              },
+              "name": "azure",
+              "fullName": "Azure",
+              "locations": [
+                "panel"
+              ],
+              "modes": [
+                "agent",
+                "ask",
+                "edit"
+              ],
+              "slashCommands": [
+                {
+                  "name": "learn",
+                  "description": "Learn about Azure"
+                },
+                {
+                  "name": "resources",
+                  "description": "Get information about your Azure resources"
+                },
+                {
+                  "name": "diagnose",
+                  "description": "Diagnose problems with your Azure applications"
+                },
+                {
+                  "name": "cost",
+                  "description": "Query incurred costs of your Azure resources"
+                },
+                {
+                  "name": "feedback",
+                  "description": "Provide feedback or report an issue"
+                },
+                {
+                  "name": "help",
+                  "description": "Get help with the GitHub Copilot for Azure extension"
+                },
+                {
+                  "name": "changeTenant",
+                  "description": "Pick what tenant @azure should use"
+                },
+                {
+                  "name": "exp",
+                  "description": "Learn about Online Experimentation"
+                }
+              ],
+              "disambiguation": [
+                {
+                  "category": "azure_learn",
+                  "description": "The user has a conceptual question about Azure.",
+                  "examples": [
+                    "What is the difference between a blob container and a file share?",
+                    "Does Azure let me choose where my resources are located?",
+                    "What are the pros and cons of function apps vs container apps?",
+                    "How does Azure compare to other cloud offerings?"
+                  ]
+                },
+                {
+                  "category": "azure_resources",
+                  "description": "The user wants information about their Azure resources.",
+                  "examples": [
+                    "What is the application URL of my container app?",
+                    "How many of my virtual machines are currently in a running state?",
+                    "How many cosmos databases have I created in west us 2?"
+                  ]
+                },
+                {
+                  "category": "azure_troubleshoot",
+                  "description": "The user wants help troubleshooting issues.",
+                  "examples": [
+                    "How many failed requests did my app receive in the last hour?",
+                    "Why is my app service slow?"
+                  ]
+                },
+                {
+                  "category": "azure_deploy",
+                  "description": "The user wants to deploy to Azure.",
+                  "examples": [
+                    "Help me deploy my azd template to the cloud",
+                    "I'd like to create and deploy an AI image generator app",
+                    "How can I deploy this project to Azure?"
+                  ]
+                },
+                {
+                  "category": "azure_cost",
+                  "description": "The user asks a question about costs incurred by Azure resources.",
+                  "examples": [
+                    "Show me my Azure costs of the last month",
+                    "How much did I spend in Azure this month so far?",
+                    "Show me my Azure costs in the past 3 months and compare them.",
+                    "What's the cost of my App Service in January, February and March?"
+                  ]
+                },
+                {
+                  "category": "azure_template",
+                  "description": "The user wants to create a new web app in Azure from a template.",
+                  "examples": [
+                    "I want to create a new web app in Azure with Python and MongoDB"
+                  ]
+                }
+              ]
+            },
+            "kind": "agent"
+          },
+          {
+            "range": {
+              "start": 6,
+              "endExclusive": 79
+            },
+            "editorRange": {
+              "startLineNumber": 1,
+              "startColumn": 7,
+              "endLineNumber": 1,
+              "endColumn": 80
+            },
+            "text": " I've signed into my Microsoft account. Help me with my previous message.",
+            "kind": "text"
+          }
+        ],
+        "text": "@azure I've signed into my Microsoft account. Help me with my previous message."
+      },
+      "variableData": {
+        "variables": [
+          {
+            "kind": "file",
+            "id": "vscode.implicit.file",
+            "name": "file:README.md",
+            "value": {
+              "$mid": 1,
+              "fsPath": "\\home\\devcontainers\\awesome-copilot\\README.md",
+              "_sep": 1,
+              "external": "vscode-remote://wsl%2Bubuntu/home/devcontainers/awesome-copilot/README.md",
+              "path": "/home/devcontainers/awesome-copilot/README.md",
+              "scheme": "vscode-remote",
+              "authority": "wsl+Ubuntu"
+            },
+            "modelDescription": "User's active file"
+          },
+          {
+            "id": "vscode.prompt.instructions.root__vscode-userdata:/c%3A/Users/pawu/AppData/Roaming/Code/User/prompts/test.instructions.md",
+            "name": "prompt:test.instructions.md",
+            "value": {
+              "$mid": 1,
+              "external": "vscode-userdata:/c%3A/Users/pawu/AppData/Roaming/Code/User/prompts/test.instructions.md",
+              "path": "/C:/Users/pawu/AppData/Roaming/Code/User/prompts/test.instructions.md",
+              "scheme": "vscode-userdata"
+            },
+            "kind": "promptFile",
+            "modelDescription": "Prompt instructions file",
+            "isRoot": true,
+            "originLabel": "Automatically attached as pattern is **",
+            "automaticallyAdded": true
+          },
+          {
+            "id": "vscode.prompt.instructions.root__vscode-remote://wsl%2Bubuntu/home/devcontainers/awesome-copilot/.github/copilot-instructions.md",
+            "name": "prompt:copilot-instructions.md",
+            "value": {
+              "$mid": 1,
+              "external": "vscode-remote://wsl%2Bubuntu/home/devcontainers/awesome-copilot/.github/copilot-instructions.md",
+              "path": "/home/devcontainers/awesome-copilot/.github/copilot-instructions.md",
+              "scheme": "vscode-remote",
+              "authority": "wsl+Ubuntu"
+            },
+            "kind": "promptFile",
+            "modelDescription": "Prompt instructions file",
+            "isRoot": true,
+            "originLabel": "Automatically attached as setting github.copilot.chat.codeGeneration.useInstructionFiles is enabled",
+            "automaticallyAdded": true
+          },
+          {
+            "id": "vscode.prompt.instructions.root__vscode-remote://wsl%2Bubuntu/home/devcontainers/awesome-copilot/AGENTS.md",
+            "name": "prompt:AGENTS.md",
+            "value": {
+              "$mid": 1,
+              "external": "vscode-remote://wsl%2Bubuntu/home/devcontainers/awesome-copilot/AGENTS.md",
+              "path": "/home/devcontainers/awesome-copilot/AGENTS.md",
+              "scheme": "vscode-remote",
+              "authority": "wsl+Ubuntu"
+            },
+            "kind": "promptFile",
+            "modelDescription": "Prompt instructions file",
+            "isRoot": true,
+            "originLabel": "Automatically attached as setting chat.useAgentsMdFile is enabled",
+            "automaticallyAdded": true
+          }
+        ]
+      },
+      "response": [
+        {
+          "kind": "mcpServersStarting",
+          "didStartServerIds": []
+        },
+        {
+          "value": "To explain how the code works in a project folder using GitHub Copilot for Azure, you should use a custom agent or prompt designed for code explanation, such as those found in the [Awesome Prompts](https://github.com/github/awesome-copilot/tree/main/prompts) or [Awesome Agents](https://github.com/github/awesome-copilot/tree/main/agents) directories.\n\n- Look for prompts ending in `.prompt.md` with a description related to code explanation or project walkthrough.\n- Activate the agent or prompt in Copilot Chat or VS Code by using the `/` command (e.g., `/explain-code`).\n- Ensure the prompt or agent follows the guidelines in [AGENTS.md](file:///home/devcontainers/awesome-copilot/AGENTS.md) and [copilot-instructions.md](file:///home/devcontainers/awesome-copilot/.github/copilot-instructions.md) for proper front matter and naming conventions.\n- For more details, see [VS Code Copilot Customization Documentation](https://code.visualstudio.com/docs/copilot/copilot-customization) and [GitHub Copilot Chat Documentation](https://code.visualstudio.com/docs/copilot/chat/copilot-chat).",
+          "supportThemeIcons": true,
+          "supportHtml": false
+        },
+        {
+          "value": "\n\n",
+          "supportThemeIcons": false,
+          "supportHtml": false,
+          "supportAlertSyntax": false,
+          "uris": {}
+        },
+        {
+          "value": "*Responses are currently scoped to the **Microsoft** tenant. [Select a different tenant](command:@azure.invokeChangeTenantSlashCommand).*",
+          "isTrusted": {
+            "enabledCommands": [
+              "@azure.invokeChangeTenantSlashCommand"
+            ]
+          },
+          "supportThemeIcons": false,
+          "supportHtml": false,
+          "supportAlertSyntax": false,
+          "uris": {
+            "command:@azure.invokeChangeTenantSlashCommand": {
+              "$mid": 1,
+              "external": "command:%40azure.invokeChangeTenantSlashCommand",
+              "path": "@azure.invokeChangeTenantSlashCommand",
+              "scheme": "command"
+            }
+          }
+        }
+      ],
+      "agent": {
+        "extensionId": {
+          "value": "ms-azuretools.vscode-azure-github-copilot",
+          "_lower": "ms-azuretools.vscode-azure-github-copilot"
+        },
+        "extensionVersion": "1.0.153",
+        "publisherDisplayName": "Microsoft",
+        "extensionPublisherId": "ms-azuretools",
+        "extensionDisplayName": "GitHub Copilot for Azure",
+        "id": "ms-azuretools.azure-agent",
+        "description": "GitHub Copilot for Azure",
+        "metadata": {
+          "isSticky": true,
+          "icon": {
+            "$mid": 1,
+            "path": "/home/devcontainers/.vscode-server/extensions/ms-azuretools.vscode-azure-github-copilot-1.0.153-linux-x64/resources/GitHubCopilotforAzure.svg",
+            "scheme": "vscode-remote",
+            "authority": "wsl+Ubuntu"
+          },
+          "hasFollowups": true
+        },
+        "name": "azure",
+        "fullName": "Azure",
+        "locations": [
+          "panel"
+        ],
+        "modes": [
+          "agent",
+          "ask",
+          "edit"
+        ],
+        "slashCommands": [
+          {
+            "name": "learn",
+            "description": "Learn about Azure"
+          },
+          {
+            "name": "resources",
+            "description": "Get information about your Azure resources"
+          },
+          {
+            "name": "diagnose",
+            "description": "Diagnose problems with your Azure applications"
+          },
+          {
+            "name": "cost",
+            "description": "Query incurred costs of your Azure resources"
+          },
+          {
+            "name": "feedback",
+            "description": "Provide feedback or report an issue"
+          },
+          {
+            "name": "help",
+            "description": "Get help with the GitHub Copilot for Azure extension"
+          },
+          {
+            "name": "changeTenant",
+            "description": "Pick what tenant @azure should use"
+          },
+          {
+            "name": "exp",
+            "description": "Learn about Online Experimentation"
+          }
+        ],
+        "disambiguation": [
+          {
+            "category": "azure_learn",
+            "description": "The user has a conceptual question about Azure.",
+            "examples": [
+              "What is the difference between a blob container and a file share?",
+              "Does Azure let me choose where my resources are located?",
+              "What are the pros and cons of function apps vs container apps?",
+              "How does Azure compare to other cloud offerings?"
+            ]
+          },
+          {
+            "category": "azure_resources",
+            "description": "The user wants information about their Azure resources.",
+            "examples": [
+              "What is the application URL of my container app?",
+              "How many of my virtual machines are currently in a running state?",
+              "How many cosmos databases have I created in west us 2?"
+            ]
+          },
+          {
+            "category": "azure_troubleshoot",
+            "description": "The user wants help troubleshooting issues.",
+            "examples": [
+              "How many failed requests did my app receive in the last hour?",
+              "Why is my app service slow?"
+            ]
+          },
+          {
+            "category": "azure_deploy",
+            "description": "The user wants to deploy to Azure.",
+            "examples": [
+              "Help me deploy my azd template to the cloud",
+              "I'd like to create and deploy an AI image generator app",
+              "How can I deploy this project to Azure?"
+            ]
+          },
+          {
+            "category": "azure_cost",
+            "description": "The user asks a question about costs incurred by Azure resources.",
+            "examples": [
+              "Show me my Azure costs of the last month",
+              "How much did I spend in Azure this month so far?",
+              "Show me my Azure costs in the past 3 months and compare them.",
+              "What's the cost of my App Service in January, February and March?"
+            ]
+          },
+          {
+            "category": "azure_template",
+            "description": "The user wants to create a new web app in Azure from a template.",
+            "examples": [
+              "I want to create a new web app in Azure with Python and MongoDB"
+            ]
+          }
+        ]
+      },
+      "timestamp": 1770483594817,
+      "modelId": "copilot/claude-opus-4.5",
+      "responseId": "response_3ddba82f-0f08-49ae-bc0b-f16cbdb9604f",
+      "result": {
+        "timings": {
+          "firstProgress": 17805,
+          "totalElapsed": 24706
+        },
+        "metadata": {
+          "handlerChain": [
+            "aiDriver"
+          ],
+          "requestId": "850b5043-97e8-4370-9991-85a9edabf62c",
+          "resultId": "259e0427-0d68-4831-897f-9d29fcbdd969",
+          "conversationIndex": 3,
+          "handlerDetermination": {
+            "via": "default"
+          },
+          "chatSessionId": "2336fcca-6f21-40a1-a6ed-65cc0da251e3",
+          "telemetryProperties": {
+            "localPluginInvocations": "[]",
+            "localPluginsAvailable": "[{\"name\":\"azure_app_logs\",\"version\":\"1.0.0\"},{\"name\":\"azure_auth\",\"version\":\"1.0.0\"},{\"name\":\"azure_workspace\",\"version\":\"1.0.0\"},{\"name\":\"azure_dotnet_templates\",\"version\":\"1.0.0\"}]",
+            "allPluginInvocations": "[]",
+            "outputTokenCount": 245,
+            "orchestratorModelName": "gpt-4.1",
+            "retryCount": 0,
+            "historyTokenCount": 29985,
+            "displayedTipMessageCategory": "currentTenant",
+            "receivedCapiToken": "true",
+            "userContext": "{\"subscription\":{\"inUserPrompt\":false,\"inUserConversationHistory\":false,\"setInChatRequest\":true,\"countOfInResponse\":0},\"resourceTree\":{\"inUserPrompt\":false,\"inUserConversationHistory\":false,\"setInChatRequest\":false,\"countOfInResponse\":0},\"conversationResource\":{\"inUserPrompt\":false,\"inUserConversationHistory\":false,\"setInChatRequest\":false,\"countOfInResponse\":0},\"relevantClientExtensions\":{\"inUserPrompt\":false,\"inUserConversationHistory\":false,\"setInChatRequest\":false,\"countOfInResponse\":0,\"stringsInResponse\":\"[]\"},\"iac\":{\"inUserPrompt\":false,\"inUserConversationHistory\":false,\"setInChatRequest\":true,\"countOfInResponse\":0,\"stringsInResponse\":\"[]\"}}"
+          },
+          "aiDriver_pluginsMetadata": {},
+          "aiDriver_tipMessageInResponse": "currentTenant"
+        }
+      },
+      "responseMarkdownInfo": [],
+      "followups": [
+        {
+          "kind": "reply",
+          "agentId": "ms-azuretools.azure-agent",
+          "subCommand": "",
+          "message": "How do I use GitHub Copilot to explain code in my project folder?"
+        },
+        {
+          "kind": "reply",
+          "agentId": "ms-azuretools.azure-agent",
+          "subCommand": "",
+          "message": "Can Copilot analyze multiple files at once?"
+        },
+        {
+          "kind": "reply",
+          "agentId": "ms-azuretools.azure-agent",
+          "subCommand": "",
+          "message": "Is there a way to get explanations for specific functions or classes in my code?"
+        }
+      ],
+      "modelState": {
+        "value": 1,
+        "completedAt": 1770483619864
+      },
+      "contentReferences": [
+        {
+          "kind": "reference",
+          "reference": {
+            "$mid": 1,
+            "path": "/home/devcontainers/awesome-copilot/.github/copilot-instructions.md",
+            "scheme": "vscode-remote",
+            "authority": "wsl+Ubuntu"
+          }
+        }
+      ],
+      "codeCitations": [],
+      "timeSpentWaiting": 0
+    },
+    {
+      "requestId": "request_78b5866d-194f-4cd6-9dce-ccb19ced5ca1",
+      "message": {
+        "parts": [
+          {
+            "range": {
+              "start": 0,
+              "endExclusive": 97
+            },
+            "editorRange": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 1,
+              "endColumn": 98
+            },
+            "text": "Which of the prompts in this project folder can help me with explaining code in a project folder?",
+            "kind": "text"
+          }
+        ],
+        "text": "Which of the prompts in this project folder can help me with explaining code in a project folder?"
+      },
+      "variableData": {
+        "variables": [
+          {
+            "kind": "file",
+            "id": "vscode.implicit.file",
+            "name": "file:README.md",
+            "value": {
+              "$mid": 1,
+              "fsPath": "\\home\\devcontainers\\awesome-copilot\\README.md",
+              "_sep": 1,
+              "external": "vscode-remote://wsl%2Bubuntu/home/devcontainers/awesome-copilot/README.md",
+              "path": "/home/devcontainers/awesome-copilot/README.md",
+              "scheme": "vscode-remote",
+              "authority": "wsl+Ubuntu"
+            },
+            "modelDescription": "User's active file"
+          },
+          {
+            "id": "vscode.prompt.instructions.root__vscode-userdata:/c%3A/Users/pawu/AppData/Roaming/Code/User/prompts/test.instructions.md",
+            "name": "prompt:test.instructions.md",
+            "value": {
+              "$mid": 1,
+              "external": "vscode-userdata:/c%3A/Users/pawu/AppData/Roaming/Code/User/prompts/test.instructions.md",
+              "path": "/C:/Users/pawu/AppData/Roaming/Code/User/prompts/test.instructions.md",
+              "scheme": "vscode-userdata"
+            },
+            "kind": "promptFile",
+            "modelDescription": "Prompt instructions file",
+            "isRoot": true,
+            "originLabel": "Automatically attached as pattern is **",
+            "automaticallyAdded": true
+          },
+          {
+            "id": "vscode.prompt.instructions.root__vscode-remote://wsl%2Bubuntu/home/devcontainers/awesome-copilot/.github/copilot-instructions.md",
+            "name": "prompt:copilot-instructions.md",
+            "value": {
+              "$mid": 1,
+              "external": "vscode-remote://wsl%2Bubuntu/home/devcontainers/awesome-copilot/.github/copilot-instructions.md",
+              "path": "/home/devcontainers/awesome-copilot/.github/copilot-instructions.md",
+              "scheme": "vscode-remote",
+              "authority": "wsl+Ubuntu"
+            },
+            "kind": "promptFile",
+            "modelDescription": "Prompt instructions file",
+            "isRoot": true,
+            "originLabel": "Automatically attached as setting github.copilot.chat.codeGeneration.useInstructionFiles is enabled",
+            "automaticallyAdded": true
+          },
+          {
+            "id": "vscode.prompt.instructions.root__vscode-remote://wsl%2Bubuntu/home/devcontainers/awesome-copilot/AGENTS.md",
+            "name": "prompt:AGENTS.md",
+            "value": {
+              "$mid": 1,
+              "external": "vscode-remote://wsl%2Bubuntu/home/devcontainers/awesome-copilot/AGENTS.md",
+              "path": "/home/devcontainers/awesome-copilot/AGENTS.md",
+              "scheme": "vscode-remote",
+              "authority": "wsl+Ubuntu"
+            },
+            "kind": "promptFile",
+            "modelDescription": "Prompt instructions file",
+            "isRoot": true,
+            "originLabel": "Automatically attached as setting chat.useAgentsMdFile is enabled",
+            "automaticallyAdded": true
+          }
+        ]
+      },
+      "response": [
+        {
+          "kind": "mcpServersStarting",
+          "didStartServerIds": []
+        },
+        {
+          "kind": "progressTaskSerialized",
+          "content": {
+            "value": "Collecting workspace information",
+            "uris": {}
+          },
+          "progress": []
+        },
+        {
+          "value": "Based on the workspace, the following prompts can help you explain code in a project folder:\n\n| Prompt | Description |\n| ------ | ----------- |\n| **Add Educational Comments** | Adds educational comments to code files, explaining what code does and why, with configurable detail levels and knowledge levels for learning purposes. |\n| **Comment Code Generate A Tutorial** | Transforms Python scripts into beginner-friendly projects by refactoring code, adding instructional comments, and generating a complete markdown tutorial with setup instructions and example usage. |\n| **Repo Story Time** | Explores repository structure and explains the project's purpose, technologies, and key concepts by analyzing configuration files, documentation, and source directories. |\n| **Code Exemplars Blueprint Generator** | Analyzes a codebase to identify high-quality implementation examples and document best practices, patterns, and conventions used throughout the project. |\n| **Technology Stack Blueprint Generator** | Generates comprehensive documentation of the technology stack, implementation patterns, and usage examples to help understand how a project is built. |\n| **Architecture Blueprint Generator** | Creates detailed documentation of project architecture, component relationships, and design patterns to explain how the codebase is structured. |\n\nThe **Add Educational Comments** and **Comment Code Generate A Tutorial** prompts are most directly focused on explaining code, while the blueprint generators provide higher-level project understanding.",
+          "supportThemeIcons": false,
+          "supportHtml": false,
+          "baseUri": {
+            "$mid": 1,
+            "path": "/home/devcontainers/awesome-copilot/",
+            "scheme": "vscode-remote",
+            "authority": "wsl+Ubuntu"
+          }
+        }
+      ],
+      "agent": {
+        "extensionId": {
+          "value": "GitHub.copilot-chat",
+          "_lower": "github.copilot-chat"
+        },
+        "extensionVersion": "0.37.1",
+        "publisherDisplayName": "GitHub",
+        "extensionPublisherId": "GitHub",
+        "extensionDisplayName": "GitHub Copilot Chat",
+        "id": "github.copilot.workspace",
+        "description": "Ask about your workspace",
+        "when": "!github.copilot.interactiveSession.disabled",
+        "metadata": {
+          "sampleRequest": "How do I build this project?",
+          "themeIcon": {
+            "id": "code"
+          },
+          "hasFollowups": false,
+          "supportIssueReporting": false
+        },
+        "name": "workspace",
+        "fullName": "Workspace",
+        "locations": [
+          "panel"
+        ],
+        "modes": [
+          "agent",
+          "ask",
+          "edit"
+        ],
+        "slashCommands": [
+          {
+            "name": "explain",
+            "description": "Explain how the code in your active editor works"
+          },
+          {
+            "name": "tests",
+            "description": "Generate unit tests for the selected code",
+            "disambiguation": [
+              {
+                "category": "create_tests",
+                "description": "The user wants to generate unit tests.",
+                "examples": [
+                  "Generate tests for my selection using pytest."
+                ]
+              }
+            ]
+          },
+          {
+            "name": "fix",
+            "description": "Propose a fix for the problems in the selected code",
+            "sampleRequest": "There is a problem in this code. Rewrite the code to show it with the bug fixed."
+          },
+          {
+            "name": "new",
+            "description": "Scaffold code for a new file or project in a workspace",
+            "sampleRequest": "Create a RESTful API server using typescript",
+            "isSticky": true,
+            "disambiguation": [
+              {
+                "category": "create_new_workspace_or_extension",
+                "description": "The user wants to create a complete Visual Studio Code workspace from scratch, such as a new application or a Visual Studio Code extension. Use this category only if the question relates to generating or creating new workspaces in Visual Studio Code. Do not use this category for updating existing code or generating sample code snippets",
+                "examples": [
+                  "Scaffold a Node server.",
+                  "Create a sample project which uses the fileSystemProvider API.",
+                  "react application"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "newNotebook",
+            "description": "Create a new Jupyter Notebook",
+            "sampleRequest": "How do I create a notebook to load data from a csv file?",
+            "disambiguation": [
+              {
+                "category": "create_jupyter_notebook",
+                "description": "The user wants to create a new Jupyter notebook in Visual Studio Code.",
+                "examples": [
+                  "Create a notebook to analyze this CSV file."
+                ]
+              }
+            ]
+          },
+          {
+            "name": "setupTests",
+            "description": "Set up tests in your project (Experimental)",
+            "sampleRequest": "add playwright tests to my project",
+            "when": "config.github.copilot.chat.setupTests.enabled",
+            "disambiguation": [
+              {
+                "category": "set_up_tests",
+                "description": "The user wants to configure project test setup, framework, or test runner. The user does not want to fix their existing tests.",
+                "examples": [
+                  "Set up tests for this project."
+                ]
+              }
+            ]
+          }
+        ],
+        "disambiguation": [
+          {
+            "category": "workspace_project_questions",
+            "description": "The user wants to learn about or update the code or files in their current workspace. Questions in this category may be about understanding what the whole workspace does or locating the implementation of some code. This does not include generating or updating tests.",
+            "examples": [
+              "What does this project do?"
+            ]
+          },
+          {
+            "category": "find_code_in_workspace",
+            "description": "The user wants to locate the implementation of some functionality in their current workspace.",
+            "examples": [
+              "Where is the tree widget implemented?"
+            ]
+          },
+          {
+            "category": "generate_with_workspace_context",
+            "description": "The user wants to generate code based on multiple files in the workspace and did not specify which files to reference.",
+            "examples": [
+              "Create a README for this project."
+            ]
+          }
+        ]
+      },
+      "timestamp": 1770483700956,
+      "modelId": "copilot/claude-opus-4.5",
+      "responseId": "response_5d8f063f-1a69-43cb-a4ef-90a78fcc0b3e",
+      "result": {
+        "timings": {
+          "firstProgress": 6215,
+          "totalElapsed": 12237
+        },
+        "metadata": {
+          "codeBlocks": [],
+          "promptTokens": 65085,
+          "outputTokens": 396,
+          "toolCallRounds": [
+            {
+              "response": "Based on the workspace, the following prompts can help you explain code in a project folder:\n\n| Prompt | Description |\n| ------ | ----------- |\n| [**Add Educational Comments**](prompts/add-educational-comments.prompt.md) | Adds educational comments to code files, explaining what code does and why, with configurable detail levels and knowledge levels for learning purposes. |\n| [**Comment Code Generate A Tutorial**](prompts/comment-code-generate-a-tutorial.prompt.md) | Transforms Python scripts into beginner-friendly projects by refactoring code, adding instructional comments, and generating a complete markdown tutorial with setup instructions and example usage. |\n| [**Repo Story Time**](prompts/repo-story-time.prompt.md) | Explores repository structure and explains the project's purpose, technologies, and key concepts by analyzing configuration files, documentation, and source directories. |\n| [**Code Exemplars Blueprint Generator**](prompts/code-exemplars-blueprint-generator.prompt.md) | Analyzes a codebase to identify high-quality implementation examples and document best practices, patterns, and conventions used throughout the project. |\n| [**Technology Stack Blueprint Generator**](prompts/technology-stack-blueprint-generator.prompt.md) | Generates comprehensive documentation of the technology stack, implementation patterns, and usage examples to help understand how a project is built. |\n| [**Architecture Blueprint Generator**](prompts/architecture-blueprint-generator.prompt.md) | Creates detailed documentation of project architecture, component relationships, and design patterns to explain how the codebase is structured. |\n\nThe **Add Educational Comments** and **Comment Code Generate A Tutorial** prompts are most directly focused on explaining code, while the blueprint generators provide higher-level project understanding.",
+              "toolCalls": [],
+              "toolInputRetry": 0,
+              "id": "dee83c62-8331-4a23-8381-29defca6e9d0"
+            }
+          ],
+          "modelMessageId": "eb99e1c2-c29e-4e81-aa9a-0933d3b68579",
+          "responseId": "9f60263a-69b9-418f-9fac-80d1b260120b",
+          "sessionId": "3c1bbb90-ddbc-4732-8edb-7a1f3f5d3d7a",
+          "agentId": "github.copilot.workspace"
+        },
+        "details": "Claude Opus 4.5 • 3x",
+        "usage": {
+          "completionTokens": 396,
+          "promptTokens": 65085,
+          "promptTokenDetails": [
+            {
+              "category": "System",
+              "label": "System Instructions",
+              "percentageOfPrompt": 7
+            },
+            {
+              "category": "User Context",
+              "label": "Messages",
+              "percentageOfPrompt": 48
+            },
+            {
+              "category": "User Context",
+              "label": "Files",
+              "percentageOfPrompt": 45
+            }
+          ]
+        }
+      },
+      "responseMarkdownInfo": [],
+      "followups": [],
+      "modelState": {
+        "value": 1,
+        "completedAt": 1770483714427
+      },
+      "contentReferences": [
+        {
+          "kind": "reference",
+          "reference": {
+            "$mid": 1,
+            "path": "/home/devcontainers/awesome-copilot/.github/copilot-instructions.md",
+            "scheme": "vscode-remote",
+            "authority": "wsl+Ubuntu"
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "$mid": 1,
+            "path": "/home/devcontainers/awesome-copilot/AGENTS.md",
+            "scheme": "vscode-remote",
+            "authority": "wsl+Ubuntu"
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "uri": {
+              "$mid": 1,
+              "path": "/home/devcontainers/awesome-copilot/agents/demonstrate-understanding.agent.md",
+              "scheme": "vscode-remote",
+              "authority": "wsl+Ubuntu"
+            },
+            "range": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 7,
+              "endColumn": 1
+            }
+          },
+          "options": {
+            "isFromTool": false
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "uri": {
+              "$mid": 1,
+              "path": "/home/devcontainers/awesome-copilot/agents/meta-agentic-project-scaffold.agent.md",
+              "scheme": "vscode-remote",
+              "authority": "wsl+Ubuntu"
+            },
+            "range": {
+              "startLineNumber": 11,
+              "startColumn": 1,
+              "endLineNumber": 17,
+              "endColumn": 1
+            }
+          },
+          "options": {
+            "isFromTool": false
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "uri": {
+              "$mid": 1,
+              "path": "/home/devcontainers/awesome-copilot/CONTRIBUTING.md",
+              "scheme": "vscode-remote",
+              "authority": "wsl+Ubuntu"
+            },
+            "range": {
+              "startLineNumber": 61,
+              "startColumn": 1,
+              "endLineNumber": 89,
+              "endColumn": 1
+            }
+          },
+          "options": {
+            "isFromTool": false
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "uri": {
+              "$mid": 1,
+              "path": "/home/devcontainers/awesome-copilot/docs/README.prompts.md",
+              "scheme": "vscode-remote",
+              "authority": "wsl+Ubuntu"
+            },
+            "range": {
+              "startLineNumber": 24,
+              "startColumn": 1,
+              "endLineNumber": 25,
+              "endColumn": 1
+            }
+          },
+          "options": {
+            "isFromTool": false
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "uri": {
+              "$mid": 1,
+              "path": "/home/devcontainers/awesome-copilot/docs/README.prompts.md",
+              "scheme": "vscode-remote",
+              "authority": "wsl+Ubuntu"
+            },
+            "range": {
+              "startLineNumber": 29,
+              "startColumn": 1,
+              "endLineNumber": 30,
+              "endColumn": 1
+            }
+          },
+          "options": {
+            "isFromTool": false
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "uri": {
+              "$mid": 1,
+              "path": "/home/devcontainers/awesome-copilot/docs/README.prompts.md",
+              "scheme": "vscode-remote",
+              "authority": "wsl+Ubuntu"
+            },
+            "range": {
+              "startLineNumber": 39,
+              "startColumn": 1,
+              "endLineNumber": 40,
+              "endColumn": 1
+            }
+          },
+          "options": {
+            "isFromTool": false
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "uri": {
+              "$mid": 1,
+              "path": "/home/devcontainers/awesome-copilot/docs/README.prompts.md",
+              "scheme": "vscode-remote",
+              "authority": "wsl+Ubuntu"
+            },
+            "range": {
+              "startLineNumber": 52,
+              "startColumn": 1,
+              "endLineNumber": 53,
+              "endColumn": 1
+            }
+          },
+          "options": {
+            "isFromTool": false
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "uri": {
+              "$mid": 1,
+              "path": "/home/devcontainers/awesome-copilot/docs/README.prompts.md",
+              "scheme": "vscode-remote",
+              "authority": "wsl+Ubuntu"
+            },
+            "range": {
+              "startLineNumber": 56,
+              "startColumn": 1,
+              "endLineNumber": 60,
+              "endColumn": 1
+            }
+          },
+          "options": {
+            "isFromTool": false
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "uri": {
+              "$mid": 1,
+              "path": "/home/devcontainers/awesome-copilot/docs/README.prompts.md",
+              "scheme": "vscode-remote",
+              "authority": "wsl+Ubuntu"
+            },
+            "range": {
+              "startLineNumber": 110,
+              "startColumn": 1,
+              "endLineNumber": 111,
+              "endColumn": 1
+            }
+          },
+          "options": {
+            "isFromTool": false
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "uri": {
+              "$mid": 1,
+              "path": "/home/devcontainers/awesome-copilot/docs/README.prompts.md",
+              "scheme": "vscode-remote",
+              "authority": "wsl+Ubuntu"
+            },
+            "range": {
+              "startLineNumber": 113,
+              "startColumn": 1,
+              "endLineNumber": 114,
+              "endColumn": 1
+            }
+          },
+          "options": {
+            "isFromTool": false
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "uri": {
+              "$mid": 1,
+              "path": "/home/devcontainers/awesome-copilot/docs/README.prompts.md",
+              "scheme": "vscode-remote",
+              "authority": "wsl+Ubuntu"
+            },
+            "range": {
+              "startLineNumber": 119,
+              "startColumn": 1,
+              "endLineNumber": 120,
+              "endColumn": 1
+            }
+          },
+          "options": {
+            "isFromTool": false
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "uri": {
+              "$mid": 1,
+              "path": "/home/devcontainers/awesome-copilot/docs/README.prompts.md",
+              "scheme": "vscode-remote",
+              "authority": "wsl+Ubuntu"
+            },
+            "range": {
+              "startLineNumber": 133,
+              "startColumn": 1,
+              "endLineNumber": 134,
+              "endColumn": 1
+            }
+          },
+          "options": {
+            "isFromTool": false
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "uri": {
+              "$mid": 1,
+              "path": "/home/devcontainers/awesome-copilot/eng/constants.mjs",
+              "scheme": "vscode-remote",
+              "authority": "wsl+Ubuntu"
+            },
+            "range": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 48,
+              "endColumn": 1
+            }
+          },
+          "options": {
+            "isFromTool": false
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "uri": {
+              "$mid": 1,
+              "path": "/home/devcontainers/awesome-copilot/eng/generate-website-data.mjs",
+              "scheme": "vscode-remote",
+              "authority": "wsl+Ubuntu"
+            },
+            "range": {
+              "startLineNumber": 129,
+              "startColumn": 1,
+              "endLineNumber": 158,
+              "endColumn": 1
+            }
+          },
+          "options": {
+            "isFromTool": false
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "uri": {
+              "$mid": 1,
+              "path": "/home/devcontainers/awesome-copilot/eng/update-readme.mjs",
+              "scheme": "vscode-remote",
+              "authority": "wsl+Ubuntu"
+            },
+            "range": {
+              "startLineNumber": 347,
+              "startColumn": 1,
+              "endLineNumber": 376,
+              "endColumn": 1
+            }
+          },
+          "options": {
+            "isFromTool": false
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "uri": {
+              "$mid": 1,
+              "path": "/home/devcontainers/awesome-copilot/instructions/code-review-generic.instructions.md",
+              "scheme": "vscode-remote",
+              "authority": "wsl+Ubuntu"
+            },
+            "range": {
+              "startLineNumber": 407,
+              "startColumn": 1,
+              "endLineNumber": 419,
+              "endColumn": 1
+            }
+          },
+          "options": {
+            "isFromTool": false
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "uri": {
+              "$mid": 1,
+              "path": "/home/devcontainers/awesome-copilot/instructions/codexer.instructions.md",
+              "scheme": "vscode-remote",
+              "authority": "wsl+Ubuntu"
+            },
+            "range": {
+              "startLineNumber": 86,
+              "startColumn": 1,
+              "endLineNumber": 92,
+              "endColumn": 1
+            }
+          },
+          "options": {
+            "isFromTool": false
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "uri": {
+              "$mid": 1,
+              "path": "/home/devcontainers/awesome-copilot/instructions/codexer.instructions.md",
+              "scheme": "vscode-remote",
+              "authority": "wsl+Ubuntu"
+            },
+            "range": {
+              "startLineNumber": 310,
+              "startColumn": 1,
+              "endLineNumber": 328,
+              "endColumn": 1
+            }
+          },
+          "options": {
+            "isFromTool": false
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "uri": {
+              "$mid": 1,
+              "path": "/home/devcontainers/awesome-copilot/instructions/instructions.instructions.md",
+              "scheme": "vscode-remote",
+              "authority": "wsl+Ubuntu"
+            },
+            "range": {
+              "startLineNumber": 8,
+              "startColumn": 1,
+              "endLineNumber": 254,
+              "endColumn": 1
+            }
+          },
+          "options": {
+            "isFromTool": false
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "uri": {
+              "$mid": 1,
+              "path": "/home/devcontainers/awesome-copilot/instructions/langchain-python.instructions.md",
+              "scheme": "vscode-remote",
+              "authority": "wsl+Ubuntu"
+            },
+            "range": {
+              "startLineNumber": 124,
+              "startColumn": 1,
+              "endLineNumber": 130,
+              "endColumn": 1
+            }
+          },
+          "options": {
+            "isFromTool": false
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "uri": {
+              "$mid": 1,
+              "path": "/home/devcontainers/awesome-copilot/instructions/memory-bank.instructions.md",
+              "scheme": "vscode-remote",
+              "authority": "wsl+Ubuntu"
+            },
+            "range": {
+              "startLineNumber": 29,
+              "startColumn": 1,
+              "endLineNumber": 67,
+              "endColumn": 1
+            }
+          },
+          "options": {
+            "isFromTool": false
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "uri": {
+              "$mid": 1,
+              "path": "/home/devcontainers/awesome-copilot/instructions/prompt.instructions.md",
+              "scheme": "vscode-remote",
+              "authority": "wsl+Ubuntu"
+            },
+            "range": {
+              "startLineNumber": 36,
+              "startColumn": 1,
+              "endLineNumber": 46,
+              "endColumn": 1
+            }
+          },
+          "options": {
+            "isFromTool": false
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "uri": {
+              "$mid": 1,
+              "path": "/home/devcontainers/awesome-copilot/plugins/database-data-management/commands/sql-code-review.md",
+              "scheme": "vscode-remote",
+              "authority": "wsl+Ubuntu"
+            },
+            "range": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 2,
+              "endColumn": 1
+            }
+          },
+          "options": {
+            "isFromTool": false
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "uri": {
+              "$mid": 1,
+              "path": "/home/devcontainers/awesome-copilot/plugins/dataverse-sdk-for-python/commands/dataverse-python-production-code.md",
+              "scheme": "vscode-remote",
+              "authority": "wsl+Ubuntu"
+            },
+            "range": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 2,
+              "endColumn": 1
+            }
+          },
+          "options": {
+            "isFromTool": false
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "uri": {
+              "$mid": 1,
+              "path": "/home/devcontainers/awesome-copilot/plugins/frontend-web-dev/commands/playwright-explore-website.md",
+              "scheme": "vscode-remote",
+              "authority": "wsl+Ubuntu"
+            },
+            "range": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 2,
+              "endColumn": 1
+            }
+          },
+          "options": {
+            "isFromTool": false
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "uri": {
+              "$mid": 1,
+              "path": "/home/devcontainers/awesome-copilot/plugins/frontend-web-dev/commands/playwright-generate-test.md",
+              "scheme": "vscode-remote",
+              "authority": "wsl+Ubuntu"
+            },
+            "range": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 2,
+              "endColumn": 1
+            }
+          },
+          "options": {
+            "isFromTool": false
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "uri": {
+              "$mid": 1,
+              "path": "/home/devcontainers/awesome-copilot/plugins/java-development/commands/create-spring-boot-java-project.md",
+              "scheme": "vscode-remote",
+              "authority": "wsl+Ubuntu"
+            },
+            "range": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 2,
+              "endColumn": 1
+            }
+          },
+          "options": {
+            "isFromTool": false
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "uri": {
+              "$mid": 1,
+              "path": "/home/devcontainers/awesome-copilot/plugins/java-development/commands/java-junit.md",
+              "scheme": "vscode-remote",
+              "authority": "wsl+Ubuntu"
+            },
+            "range": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 2,
+              "endColumn": 1
+            }
+          },
+          "options": {
+            "isFromTool": false
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "uri": {
+              "$mid": 1,
+              "path": "/home/devcontainers/awesome-copilot/plugins/openapi-to-application-csharp-dotnet/commands/openapi-to-application-code.md",
+              "scheme": "vscode-remote",
+              "authority": "wsl+Ubuntu"
+            },
+            "range": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 2,
+              "endColumn": 1
+            }
+          },
+          "options": {
+            "isFromTool": false
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "uri": {
+              "$mid": 1,
+              "path": "/home/devcontainers/awesome-copilot/plugins/openapi-to-application-go/commands/openapi-to-application-code.md",
+              "scheme": "vscode-remote",
+              "authority": "wsl+Ubuntu"
+            },
+            "range": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 2,
+              "endColumn": 1
+            }
+          },
+          "options": {
+            "isFromTool": false
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "uri": {
+              "$mid": 1,
+              "path": "/home/devcontainers/awesome-copilot/plugins/openapi-to-application-java-spring-boot/commands/openapi-to-application-code.md",
+              "scheme": "vscode-remote",
+              "authority": "wsl+Ubuntu"
+            },
+            "range": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 2,
+              "endColumn": 1
+            }
+          },
+          "options": {
+            "isFromTool": false
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "uri": {
+              "$mid": 1,
+              "path": "/home/devcontainers/awesome-copilot/plugins/openapi-to-application-nodejs-nestjs/commands/openapi-to-application-code.md",
+              "scheme": "vscode-remote",
+              "authority": "wsl+Ubuntu"
+            },
+            "range": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 2,
+              "endColumn": 1
+            }
+          },
+          "options": {
+            "isFromTool": false
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "uri": {
+              "$mid": 1,
+              "path": "/home/devcontainers/awesome-copilot/plugins/openapi-to-application-python-fastapi/commands/openapi-to-application-code.md",
+              "scheme": "vscode-remote",
+              "authority": "wsl+Ubuntu"
+            },
+            "range": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 2,
+              "endColumn": 1
+            }
+          },
+          "options": {
+            "isFromTool": false
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "uri": {
+              "$mid": 1,
+              "path": "/home/devcontainers/awesome-copilot/plugins/power-apps-code-apps/commands/power-apps-code-app-scaffold.md",
+              "scheme": "vscode-remote",
+              "authority": "wsl+Ubuntu"
+            },
+            "range": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 2,
+              "endColumn": 1
+            }
+          },
+          "options": {
+            "isFromTool": false
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "uri": {
+              "$mid": 1,
+              "path": "/home/devcontainers/awesome-copilot/plugins/project-planning/commands/breakdown-feature-implementation.md",
+              "scheme": "vscode-remote",
+              "authority": "wsl+Ubuntu"
+            },
+            "range": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 2,
+              "endColumn": 1
+            }
+          },
+          "options": {
+            "isFromTool": false
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "uri": {
+              "$mid": 1,
+              "path": "/home/devcontainers/awesome-copilot/plugins/technical-spike/commands/create-technical-spike.md",
+              "scheme": "vscode-remote",
+              "authority": "wsl+Ubuntu"
+            },
+            "range": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 2,
+              "endColumn": 1
+            }
+          },
+          "options": {
+            "isFromTool": false
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "uri": {
+              "$mid": 1,
+              "path": "/home/devcontainers/awesome-copilot/prompts/add-educational-comments.prompt.md",
+              "scheme": "vscode-remote",
+              "authority": "wsl+Ubuntu"
+            },
+            "range": {
+              "startLineNumber": 60,
+              "startColumn": 1,
+              "endLineNumber": 69,
+              "endColumn": 1
+            }
+          },
+          "options": {
+            "isFromTool": false
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "uri": {
+              "$mid": 1,
+              "path": "/home/devcontainers/awesome-copilot/prompts/architecture-blueprint-generator.prompt.md",
+              "scheme": "vscode-remote",
+              "authority": "wsl+Ubuntu"
+            },
+            "range": {
+              "startLineNumber": 20,
+              "startColumn": 1,
+              "endLineNumber": 296,
+              "endColumn": 1
+            }
+          },
+          "options": {
+            "isFromTool": false
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "uri": {
+              "$mid": 1,
+              "path": "/home/devcontainers/awesome-copilot/prompts/architecture-blueprint-generator.prompt.md",
+              "scheme": "vscode-remote",
+              "authority": "wsl+Ubuntu"
+            },
+            "range": {
+              "startLineNumber": 301,
+              "startColumn": 1,
+              "endLineNumber": 302,
+              "endColumn": 1
+            }
+          },
+          "options": {
+            "isFromTool": false
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "uri": {
+              "$mid": 1,
+              "path": "/home/devcontainers/awesome-copilot/prompts/boost-prompt.prompt.md",
+              "scheme": "vscode-remote",
+              "authority": "wsl+Ubuntu"
+            },
+            "range": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 22,
+              "endColumn": 1
+            }
+          },
+          "options": {
+            "isFromTool": false
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "uri": {
+              "$mid": 1,
+              "path": "/home/devcontainers/awesome-copilot/prompts/breakdown-feature-implementation.prompt.md",
+              "scheme": "vscode-remote",
+              "authority": "wsl+Ubuntu"
+            },
+            "range": {
+              "startLineNumber": 18,
+              "startColumn": 1,
+              "endLineNumber": 31,
+              "endColumn": 1
+            }
+          },
+          "options": {
+            "isFromTool": false
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "uri": {
+              "$mid": 1,
+              "path": "/home/devcontainers/awesome-copilot/prompts/code-exemplars-blueprint-generator.prompt.md",
+              "scheme": "vscode-remote",
+              "authority": "wsl+Ubuntu"
+            },
+            "range": {
+              "startLineNumber": 8,
+              "startColumn": 1,
+              "endLineNumber": 16,
+              "endColumn": 1
+            }
+          },
+          "options": {
+            "isFromTool": false
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "uri": {
+              "$mid": 1,
+              "path": "/home/devcontainers/awesome-copilot/prompts/code-exemplars-blueprint-generator.prompt.md",
+              "scheme": "vscode-remote",
+              "authority": "wsl+Ubuntu"
+            },
+            "range": {
+              "startLineNumber": 20,
+              "startColumn": 1,
+              "endLineNumber": 36,
+              "endColumn": 1
+            }
+          },
+          "options": {
+            "isFromTool": false
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "uri": {
+              "$mid": 1,
+              "path": "/home/devcontainers/awesome-copilot/prompts/code-exemplars-blueprint-generator.prompt.md",
+              "scheme": "vscode-remote",
+              "authority": "wsl+Ubuntu"
+            },
+            "range": {
+              "startLineNumber": 38,
+              "startColumn": 1,
+              "endLineNumber": 66,
+              "endColumn": 1
+            }
+          },
+          "options": {
+            "isFromTool": false
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "uri": {
+              "$mid": 1,
+              "path": "/home/devcontainers/awesome-copilot/prompts/code-exemplars-blueprint-generator.prompt.md",
+              "scheme": "vscode-remote",
+              "authority": "wsl+Ubuntu"
+            },
+            "range": {
+              "startLineNumber": 111,
+              "startColumn": 1,
+              "endLineNumber": 125,
+              "endColumn": 1
+            }
+          },
+          "options": {
+            "isFromTool": false
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "uri": {
+              "$mid": 1,
+              "path": "/home/devcontainers/awesome-copilot/prompts/comment-code-generate-a-tutorial.prompt.md",
+              "scheme": "vscode-remote",
+              "authority": "wsl+Ubuntu"
+            },
+            "range": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 27,
+              "endColumn": 1
+            }
+          },
+          "options": {
+            "isFromTool": false
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "uri": {
+              "$mid": 1,
+              "path": "/home/devcontainers/awesome-copilot/prompts/containerize-aspnet-framework.prompt.md",
+              "scheme": "vscode-remote",
+              "authority": "wsl+Ubuntu"
+            },
+            "range": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 8,
+              "endColumn": 1
+            }
+          },
+          "options": {
+            "isFromTool": false
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "uri": {
+              "$mid": 1,
+              "path": "/home/devcontainers/awesome-copilot/prompts/copilot-instructions-blueprint-generator.prompt.md",
+              "scheme": "vscode-remote",
+              "authority": "wsl+Ubuntu"
+            },
+            "range": {
+              "startLineNumber": 18,
+              "startColumn": 1,
+              "endLineNumber": 292,
+              "endColumn": 1
+            }
+          },
+          "options": {
+            "isFromTool": false
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "uri": {
+              "$mid": 1,
+              "path": "/home/devcontainers/awesome-copilot/prompts/create-agentsmd.prompt.md",
+              "scheme": "vscode-remote",
+              "authority": "wsl+Ubuntu"
+            },
+            "range": {
+              "startLineNumber": 32,
+              "startColumn": 1,
+              "endLineNumber": 77,
+              "endColumn": 1
+            }
+          },
+          "options": {
+            "isFromTool": false
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "uri": {
+              "$mid": 1,
+              "path": "/home/devcontainers/awesome-copilot/prompts/create-llms.prompt.md",
+              "scheme": "vscode-remote",
+              "authority": "wsl+Ubuntu"
+            },
+            "range": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 7,
+              "endColumn": 1
+            }
+          },
+          "options": {
+            "isFromTool": false
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "uri": {
+              "$mid": 1,
+              "path": "/home/devcontainers/awesome-copilot/prompts/create-llms.prompt.md",
+              "scheme": "vscode-remote",
+              "authority": "wsl+Ubuntu"
+            },
+            "range": {
+              "startLineNumber": 60,
+              "startColumn": 1,
+              "endLineNumber": 82,
+              "endColumn": 1
+            }
+          },
+          "options": {
+            "isFromTool": false
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "uri": {
+              "$mid": 1,
+              "path": "/home/devcontainers/awesome-copilot/prompts/create-readme.prompt.md",
+              "scheme": "vscode-remote",
+              "authority": "wsl+Ubuntu"
+            },
+            "range": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 21,
+              "endColumn": 1
+            }
+          },
+          "options": {
+            "isFromTool": false
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "uri": {
+              "$mid": 1,
+              "path": "/home/devcontainers/awesome-copilot/prompts/create-specification.prompt.md",
+              "scheme": "vscode-remote",
+              "authority": "wsl+Ubuntu"
+            },
+            "range": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 7,
+              "endColumn": 1
+            }
+          },
+          "options": {
+            "isFromTool": false
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "uri": {
+              "$mid": 1,
+              "path": "/home/devcontainers/awesome-copilot/prompts/create-spring-boot-java-project.prompt.md",
+              "scheme": "vscode-remote",
+              "authority": "wsl+Ubuntu"
+            },
+            "range": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 7,
+              "endColumn": 1
+            }
+          },
+          "options": {
+            "isFromTool": false
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "uri": {
+              "$mid": 1,
+              "path": "/home/devcontainers/awesome-copilot/prompts/create-spring-boot-java-project.prompt.md",
+              "scheme": "vscode-remote",
+              "authority": "wsl+Ubuntu"
+            },
+            "range": {
+              "startLineNumber": 163,
+              "startColumn": 1,
+              "endLineNumber": 164,
+              "endColumn": 1
+            }
+          },
+          "options": {
+            "isFromTool": false
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "uri": {
+              "$mid": 1,
+              "path": "/home/devcontainers/awesome-copilot/prompts/create-spring-boot-kotlin-project.prompt.md",
+              "scheme": "vscode-remote",
+              "authority": "wsl+Ubuntu"
+            },
+            "range": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 7,
+              "endColumn": 1
+            }
+          },
+          "options": {
+            "isFromTool": false
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "uri": {
+              "$mid": 1,
+              "path": "/home/devcontainers/awesome-copilot/prompts/dataverse-python-usecase-builder.prompt.md",
+              "scheme": "vscode-remote",
+              "authority": "wsl+Ubuntu"
+            },
+            "range": {
+              "startLineNumber": 221,
+              "startColumn": 1,
+              "endLineNumber": 247,
+              "endColumn": 1
+            }
+          },
+          "options": {
+            "isFromTool": false
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "uri": {
+              "$mid": 1,
+              "path": "/home/devcontainers/awesome-copilot/prompts/editorconfig.prompt.md",
+              "scheme": "vscode-remote",
+              "authority": "wsl+Ubuntu"
+            },
+            "range": {
+              "startLineNumber": 7,
+              "startColumn": 1,
+              "endLineNumber": 11,
+              "endColumn": 1
+            }
+          },
+          "options": {
+            "isFromTool": false
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "uri": {
+              "$mid": 1,
+              "path": "/home/devcontainers/awesome-copilot/prompts/first-ask.prompt.md",
+              "scheme": "vscode-remote",
+              "authority": "wsl+Ubuntu"
+            },
+            "range": {
+              "startLineNumber": 7,
+              "startColumn": 1,
+              "endLineNumber": 24,
+              "endColumn": 1
+            }
+          },
+          "options": {
+            "isFromTool": false
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "uri": {
+              "$mid": 1,
+              "path": "/home/devcontainers/awesome-copilot/prompts/folder-structure-blueprint-generator.prompt.md",
+              "scheme": "vscode-remote",
+              "authority": "wsl+Ubuntu"
+            },
+            "range": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 406,
+              "endColumn": 1
+            }
+          },
+          "options": {
+            "isFromTool": false
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "uri": {
+              "$mid": 1,
+              "path": "/home/devcontainers/awesome-copilot/prompts/generate-custom-instructions-from-codebase.prompt.md",
+              "scheme": "vscode-remote",
+              "authority": "wsl+Ubuntu"
+            },
+            "range": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 7,
+              "endColumn": 1
+            }
+          },
+          "options": {
+            "isFromTool": false
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "uri": {
+              "$mid": 1,
+              "path": "/home/devcontainers/awesome-copilot/prompts/generate-custom-instructions-from-codebase.prompt.md",
+              "scheme": "vscode-remote",
+              "authority": "wsl+Ubuntu"
+            },
+            "range": {
+              "startLineNumber": 38,
+              "startColumn": 1,
+              "endLineNumber": 63,
+              "endColumn": 1
+            }
+          },
+          "options": {
+            "isFromTool": false
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "uri": {
+              "$mid": 1,
+              "path": "/home/devcontainers/awesome-copilot/prompts/github-copilot-starter.prompt.md",
+              "scheme": "vscode-remote",
+              "authority": "wsl+Ubuntu"
+            },
+            "range": {
+              "startLineNumber": 10,
+              "startColumn": 1,
+              "endLineNumber": 20,
+              "endColumn": 1
+            }
+          },
+          "options": {
+            "isFromTool": false
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "uri": {
+              "$mid": 1,
+              "path": "/home/devcontainers/awesome-copilot/prompts/github-copilot-starter.prompt.md",
+              "scheme": "vscode-remote",
+              "authority": "wsl+Ubuntu"
+            },
+            "range": {
+              "startLineNumber": 24,
+              "startColumn": 1,
+              "endLineNumber": 45,
+              "endColumn": 1
+            }
+          },
+          "options": {
+            "isFromTool": false
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "uri": {
+              "$mid": 1,
+              "path": "/home/devcontainers/awesome-copilot/prompts/github-copilot-starter.prompt.md",
+              "scheme": "vscode-remote",
+              "authority": "wsl+Ubuntu"
+            },
+            "range": {
+              "startLineNumber": 132,
+              "startColumn": 1,
+              "endLineNumber": 147,
+              "endColumn": 1
+            }
+          },
+          "options": {
+            "isFromTool": false
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "uri": {
+              "$mid": 1,
+              "path": "/home/devcontainers/awesome-copilot/prompts/github-copilot-starter.prompt.md",
+              "scheme": "vscode-remote",
+              "authority": "wsl+Ubuntu"
+            },
+            "range": {
+              "startLineNumber": 154,
+              "startColumn": 1,
+              "endLineNumber": 177,
+              "endColumn": 1
+            }
+          },
+          "options": {
+            "isFromTool": false
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "uri": {
+              "$mid": 1,
+              "path": "/home/devcontainers/awesome-copilot/prompts/github-copilot-starter.prompt.md",
+              "scheme": "vscode-remote",
+              "authority": "wsl+Ubuntu"
+            },
+            "range": {
+              "startLineNumber": 184,
+              "startColumn": 1,
+              "endLineNumber": 219,
+              "endColumn": 1
+            }
+          },
+          "options": {
+            "isFromTool": false
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "uri": {
+              "$mid": 1,
+              "path": "/home/devcontainers/awesome-copilot/prompts/openapi-to-application-code.prompt.md",
+              "scheme": "vscode-remote",
+              "authority": "wsl+Ubuntu"
+            },
+            "range": {
+              "startLineNumber": 12,
+              "startColumn": 1,
+              "endLineNumber": 25,
+              "endColumn": 1
+            }
+          },
+          "options": {
+            "isFromTool": false
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "uri": {
+              "$mid": 1,
+              "path": "/home/devcontainers/awesome-copilot/prompts/openapi-to-application-code.prompt.md",
+              "scheme": "vscode-remote",
+              "authority": "wsl+Ubuntu"
+            },
+            "range": {
+              "startLineNumber": 59,
+              "startColumn": 1,
+              "endLineNumber": 78,
+              "endColumn": 1
+            }
+          },
+          "options": {
+            "isFromTool": false
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "uri": {
+              "$mid": 1,
+              "path": "/home/devcontainers/awesome-copilot/prompts/power-apps-code-app-scaffold.prompt.md",
+              "scheme": "vscode-remote",
+              "authority": "wsl+Ubuntu"
+            },
+            "range": {
+              "startLineNumber": 18,
+              "startColumn": 1,
+              "endLineNumber": 73,
+              "endColumn": 1
+            }
+          },
+          "options": {
+            "isFromTool": false
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "uri": {
+              "$mid": 1,
+              "path": "/home/devcontainers/awesome-copilot/prompts/project-workflow-analysis-blueprint-generator.prompt.md",
+              "scheme": "vscode-remote",
+              "authority": "wsl+Ubuntu"
+            },
+            "range": {
+              "startLineNumber": 46,
+              "startColumn": 1,
+              "endLineNumber": 72,
+              "endColumn": 1
+            }
+          },
+          "options": {
+            "isFromTool": false
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "uri": {
+              "$mid": 1,
+              "path": "/home/devcontainers/awesome-copilot/prompts/project-workflow-analysis-blueprint-generator.prompt.md",
+              "scheme": "vscode-remote",
+              "authority": "wsl+Ubuntu"
+            },
+            "range": {
+              "startLineNumber": 79,
+              "startColumn": 1,
+              "endLineNumber": 225,
+              "endColumn": 1
+            }
+          },
+          "options": {
+            "isFromTool": false
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "uri": {
+              "$mid": 1,
+              "path": "/home/devcontainers/awesome-copilot/prompts/prompt-builder.prompt.md",
+              "scheme": "vscode-remote",
+              "authority": "wsl+Ubuntu"
+            },
+            "range": {
+              "startLineNumber": 9,
+              "startColumn": 1,
+              "endLineNumber": 98,
+              "endColumn": 1
+            }
+          },
+          "options": {
+            "isFromTool": false
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "uri": {
+              "$mid": 1,
+              "path": "/home/devcontainers/awesome-copilot/prompts/prompt-builder.prompt.md",
+              "scheme": "vscode-remote",
+              "authority": "wsl+Ubuntu"
+            },
+            "range": {
+              "startLineNumber": 134,
+              "startColumn": 1,
+              "endLineNumber": 143,
+              "endColumn": 1
+            }
+          },
+          "options": {
+            "isFromTool": false
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "uri": {
+              "$mid": 1,
+              "path": "/home/devcontainers/awesome-copilot/prompts/readme-blueprint-generator.prompt.md",
+              "scheme": "vscode-remote",
+              "authority": "wsl+Ubuntu"
+            },
+            "range": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 70,
+              "endColumn": 1
+            }
+          },
+          "options": {
+            "isFromTool": false
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "uri": {
+              "$mid": 1,
+              "path": "/home/devcontainers/awesome-copilot/prompts/repo-story-time.prompt.md",
+              "scheme": "vscode-remote",
+              "authority": "wsl+Ubuntu"
+            },
+            "range": {
+              "startLineNumber": 23,
+              "startColumn": 1,
+              "endLineNumber": 40,
+              "endColumn": 1
+            }
+          },
+          "options": {
+            "isFromTool": false
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "uri": {
+              "$mid": 1,
+              "path": "/home/devcontainers/awesome-copilot/prompts/rust-mcp-server-generator.prompt.md",
+              "scheme": "vscode-remote",
+              "authority": "wsl+Ubuntu"
+            },
+            "range": {
+              "startLineNumber": 20,
+              "startColumn": 1,
+              "endLineNumber": 46,
+              "endColumn": 1
+            }
+          },
+          "options": {
+            "isFromTool": false
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "uri": {
+              "$mid": 1,
+              "path": "/home/devcontainers/awesome-copilot/prompts/structured-autonomy-generate.prompt.md",
+              "scheme": "vscode-remote",
+              "authority": "wsl+Ubuntu"
+            },
+            "range": {
+              "startLineNumber": 31,
+              "startColumn": 1,
+              "endLineNumber": 59,
+              "endColumn": 1
+            }
+          },
+          "options": {
+            "isFromTool": false
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "uri": {
+              "$mid": 1,
+              "path": "/home/devcontainers/awesome-copilot/prompts/structured-autonomy-plan.prompt.md",
+              "scheme": "vscode-remote",
+              "authority": "wsl+Ubuntu"
+            },
+            "range": {
+              "startLineNumber": 58,
+              "startColumn": 1,
+              "endLineNumber": 84,
+              "endColumn": 1
+            }
+          },
+          "options": {
+            "isFromTool": false
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "uri": {
+              "$mid": 1,
+              "path": "/home/devcontainers/awesome-copilot/prompts/technology-stack-blueprint-generator.prompt.md",
+              "scheme": "vscode-remote",
+              "authority": "wsl+Ubuntu"
+            },
+            "range": {
+              "startLineNumber": 8,
+              "startColumn": 1,
+              "endLineNumber": 19,
+              "endColumn": 1
+            }
+          },
+          "options": {
+            "isFromTool": false
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "uri": {
+              "$mid": 1,
+              "path": "/home/devcontainers/awesome-copilot/prompts/technology-stack-blueprint-generator.prompt.md",
+              "scheme": "vscode-remote",
+              "authority": "wsl+Ubuntu"
+            },
+            "range": {
+              "startLineNumber": 21,
+              "startColumn": 1,
+              "endLineNumber": 234,
+              "endColumn": 1
+            }
+          },
+          "options": {
+            "isFromTool": false
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "uri": {
+              "$mid": 1,
+              "path": "/home/devcontainers/awesome-copilot/prompts/tldr-prompt.prompt.md",
+              "scheme": "vscode-remote",
+              "authority": "wsl+Ubuntu"
+            },
+            "range": {
+              "startLineNumber": 22,
+              "startColumn": 1,
+              "endLineNumber": 39,
+              "endColumn": 1
+            }
+          },
+          "options": {
+            "isFromTool": false
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "uri": {
+              "$mid": 1,
+              "path": "/home/devcontainers/awesome-copilot/prompts/tldr-prompt.prompt.md",
+              "scheme": "vscode-remote",
+              "authority": "wsl+Ubuntu"
+            },
+            "range": {
+              "startLineNumber": 251,
+              "startColumn": 1,
+              "endLineNumber": 285,
+              "endColumn": 1
+            }
+          },
+          "options": {
+            "isFromTool": false
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "uri": {
+              "$mid": 1,
+              "path": "/home/devcontainers/awesome-copilot/prompts/update-llms.prompt.md",
+              "scheme": "vscode-remote",
+              "authority": "wsl+Ubuntu"
+            },
+            "range": {
+              "startLineNumber": 54,
+              "startColumn": 1,
+              "endLineNumber": 72,
+              "endColumn": 1
+            }
+          },
+          "options": {
+            "isFromTool": false
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "uri": {
+              "$mid": 1,
+              "path": "/home/devcontainers/awesome-copilot/prompts/write-coding-standards-from-file.prompt.md",
+              "scheme": "vscode-remote",
+              "authority": "wsl+Ubuntu"
+            },
+            "range": {
+              "startLineNumber": 206,
+              "startColumn": 1,
+              "endLineNumber": 233,
+              "endColumn": 1
+            }
+          },
+          "options": {
+            "isFromTool": false
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "$mid": 1,
+            "path": "/home/devcontainers/awesome-copilot/README.md",
+            "scheme": "vscode-remote",
+            "authority": "wsl+Ubuntu"
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "uri": {
+              "$mid": 1,
+              "path": "/home/devcontainers/awesome-copilot/website/src/pages/llms.txt.ts",
+              "scheme": "vscode-remote",
+              "authority": "wsl+Ubuntu"
+            },
+            "range": {
+              "startLineNumber": 28,
+              "startColumn": 1,
+              "endLineNumber": 54,
+              "endColumn": 1
+            }
+          },
+          "options": {
+            "isFromTool": false
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "$mid": 1,
+            "external": "vscode-userdata:/c%3A/Users/pawu/AppData/Roaming/Code/User/prompts/test.instructions.md",
+            "path": "/C:/Users/pawu/AppData/Roaming/Code/User/prompts/test.instructions.md",
+            "scheme": "vscode-userdata"
+          }
+        }
+      ],
+      "codeCitations": [],
+      "timeSpentWaiting": 0
+    }
+  ]
+}
